@@ -1,0 +1,344 @@
+
+@font-face {
+  font-family: Iceland;
+  src: url(font/Iceland-Regular.ttf);
+}
+@font-face {
+  font-family: Quantico;
+  src: url(font/Quantico-Regular.ttf);
+}
+@font-face {
+  font-family: Sharetech;
+  src: url(font/ShareTech-Regular.ttf);
+}
+@font-face {
+  font-family: Geo;
+  src: url(font/Geo-Regular.ttf);
+}
+* {
+  margin: 0;
+}
+body {
+  margin: 0px;
+  background-color: rgb(255, 215, 102);
+}
+
+#header1 {
+  background-color: rgb(234, 182, 10);
+  margin: 0px;
+}
+
+.capital {
+  font-size: 3.3rem;
+  font-weight: 900;
+}
+.head h1 {
+  padding-top: 0px;
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: Quantico;
+  text-shadow: 3px 3px black;
+}
+
+.t{
+  font-size: 2.0rem;
+  font-weight: 900;
+}
+
+.head h3{
+  padding-top: 0px;
+  padding-bottom: 3px;
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: Geo;
+  text-shadow: 2.5px 2.5px black;
+  font-size: x-large;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+  min-height: 45%;
+  flex-wrap: wrap;
+  padding: 3%;
+}
+
+.buttons > div {
+  flex-shrink: 0;
+  min-width: 25%;
+}
+
+#shadow1 {
+  box-shadow:
+    -1px 1px rgb(0, 0, 0),
+    -2px 2px rgb(0, 0, 0),
+    -3px 3px rgb(0, 0, 0),
+    -4px 4px rgb(0, 0, 0),
+    -5px 5px rgb(0, 0, 0),
+    -6px 6px rgb(0, 0, 0),
+    -7px 7px rgb(0, 0, 0),
+    -8px 8px rgb(0, 0, 0),
+    -9px 9px rgb(0, 0, 0),
+    -10px 10px rgb(0, 0, 0);
+}
+#shadow1:hover{
+  
+  transform: translateY(-10px);
+  transition: all 0.5s;
+  box-shadow: -1px 1px rgb(0, 0, 0),
+    -2px 2px rgb(0, 0, 0),
+    -3px 3px rgb(0, 0, 0),
+    -4px 4px rgb(0, 0, 0),
+    -5px 5px rgb(0, 0, 0),
+    -6px 6px rgb(0, 0, 0),
+    -7px 7px rgb(0, 0, 0),
+    -8px 8px rgb(0, 0, 0),
+    -9px 9px rgb(0, 0, 0),
+    -10px 10px rgb(0, 0, 0),
+    -11px 11px rgb(0, 0, 0),
+    -12px 12px rgb(0, 0, 0),
+    -13px 13px rgb(0, 0, 0),
+    -14px 14px rgb(0, 0, 0),
+    -15px 15px rgb(0, 0, 0),
+    -16px 16px rgb(0, 0, 0),
+    -17px 17px rgb(0, 0, 0),
+    -18px 18px rgb(0, 0, 0),
+    -19px 19px rgb(0, 0, 0),
+    -20px 20px rgb(0, 0, 0);
+}
+
+#shadow2 {
+  transition: all 0.5s;
+  box-shadow:
+    0px 10px rgb(0, 0, 0);
+}
+#shadow2:hover{
+  box-shadow: 0px 20px black;
+}
+
+#shadow3 {
+  box-shadow:
+    1px 1px rgb(0, 0, 0),
+    2px 2px rgb(0, 0, 0),
+    3px 3px rgb(0, 0, 0),
+    4px 4px rgb(0, 0, 0),
+    5px 5px rgb(0, 0, 0),
+    6px 6px rgb(0, 0, 0),
+    7px 7px rgb(0, 0, 0),
+    8px 8px rgb(0, 0, 0),
+    9px 9px rgb(0, 0, 0),
+    10px 10px rgb(0, 0, 0);
+}
+#shadow3:hover{
+  transition: all 0.5s;
+  box-shadow:
+    1px 1px rgb(0, 0, 0),
+    2px 2px rgb(0, 0, 0),
+    3px 3px rgb(0, 0, 0),
+    4px 4px rgb(0, 0, 0),
+    5px 5px rgb(0, 0, 0),
+    6px 6px rgb(0, 0, 0),
+    7px 7px rgb(0, 0, 0),
+    8px 8px rgb(0, 0, 0),
+    9px 9px rgb(0, 0, 0),
+    10px 10px rgb(0, 0, 0),
+    11px 11px rgb(0, 0, 0),
+    12px 12px rgb(0, 0, 0),
+    13px 13px rgb(0, 0, 0),
+    14px 14px rgb(0, 0, 0),
+    15px 15px rgb(0, 0, 0),
+    16px 16px rgb(0, 0, 0),
+    17px 17px rgb(0, 0, 0),
+    18px 18px rgb(0, 0, 0),
+    19px 19px rgb(0, 0, 0),
+    20px 20px rgb(0, 0, 0);
+}
+
+.buttons button {
+  height: 100%;
+  padding: 5%;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(220, 220, 220);
+  color: rgb(0, 0, 0);
+  font-family: Sharetech;
+  font-weight: 1000;
+  font-size: 1.6rem;
+  transition: ease-in-out;
+}
+
+.button1  {
+  width: 5%;
+  padding: 0%;
+  background-color: white;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.button2 {
+  width: 5%;
+  padding: 0;
+  background-color: white;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+.button3 {
+  width: 5%;
+  padding: 0;
+  background-color: white;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.button1:hover {
+  transform: translateY(-10px);
+  background-color: rgb(121, 121, 121);
+  transition : all 0.3s ;
+ }
+.button2:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s;
+  background-color: rgb(121, 121, 121);
+}
+.button3:hover {
+  transform: translateY(-10px);
+  background-color: rgb(121, 121, 121);
+}
+
+.buttons button:hover {
+  background-color: rgb(121, 121, 121);
+  color: rgb(255, 255, 255);
+}
+
+
+
+#horizontalline {
+  border: none;
+  background-color: black;
+  height: 5px;
+}
+
+.output {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+
+.output div {
+  min-height: min-content;
+  min-width: fit-content;
+  padding: 7%;
+  height: auto;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.output div {
+  font-family: Iceland;
+  align-self: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+#colour1 {
+  box-shadow:
+    0px 10px rgb(0, 0, 0);
+    border-radius: 7px;
+    border: 5px solid black;
+  display: none;
+  margin-bottom: 4%;
+  white-space: pre-line;
+}
+
+#colour2 {
+  box-shadow:
+    0px 10px rgb(0, 0, 0);
+    border-radius: 7px;
+    border: 5px solid black;
+  display: none;
+  white-space: pre-line;
+  margin-bottom: 4%;
+}
+
+#colour3 {
+  box-shadow:
+    0px 10px rgb(0, 0, 0);
+    border-radius: 7px;
+    border: 5px solid black;
+  display: none;
+white-space: pre-line;
+  margin-bottom: 4%;
+}
+
+#colour4 {
+  box-shadow:
+    0px 10px rgb(0, 0, 0);
+    border-radius: 7px;
+    border: 5px solid black;
+  display: none;
+  margin-bottom: 4%;
+  white-space: pre-line;
+}
+
+#colour5 {
+  box-shadow:
+    0px 10px rgb(0, 0, 0);
+    border-radius: 7px;
+    border: 5px solid black;
+  display: none;
+  margin-bottom: 4%;
+  white-space: pre-line;
+}
+
+.output div:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 20px black ;
+  transition: all 0.5s;
+}
+
+
+.credits{
+  display: flex;
+  gap: 0%;
+  justify-content: right;
+  flex-wrap: wrap;
+  background-color: white;
+  margin-right: 1.5%;
+  margin-left: 0.5%;
+  box-shadow:
+    1px 1px rgb(0, 0, 0),
+    2px 2px rgb(0, 0, 0),
+    3px 3px rgb(0, 0, 0),
+    4px 4px rgb(0, 0, 0),
+    5px 5px rgb(0, 0, 0),
+    6px 6px rgb(0, 0, 0),
+    7px 7px rgb(0, 0, 0);
+    margin-bottom: 3%;
+    position:sticky;
+}
+
+.credits div{
+  padding: 1%;
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.credits div:hover{
+  background-color: rgb(77,163,200);
+}
+
+.credits div:hover label{
+  color: white;
+}
+
+.credits label{
+  color: black;
+  text-decoration: none;
+  font-family: Sharetech;
+}
+
